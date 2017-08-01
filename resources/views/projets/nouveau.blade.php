@@ -43,5 +43,6 @@
                     <option value="F">Féminin</option>
                 </select>
         </div>
+        <button type="button" class="btn btn-info pull-right m-t-15 waves-effect">AJOUTER</button>
     </div>
 @endsection
