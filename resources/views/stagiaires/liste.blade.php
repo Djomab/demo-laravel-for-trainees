@@ -1,8 +1,8 @@
 @extends('template')
-@section('title') Liste - projets @endsection
-@section('page_head') LES PROJETS @endsection
+@section('title') Liste - stagiaire @endsection
+@section('page_head') LES STAGIAIRES @endsection
 @section('champ1')
-    <h2 class="card-inside-title">Liste des projets</h2>
+    <h2 class="card-inside-title">Liste des stagiaires</h2>
     <ul class="header-dropdown m-r--5">
         <li class="dropdown">
             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">

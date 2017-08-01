@@ -23,6 +23,9 @@
     <!-- Animation Css -->
     <link href="{{url('resources/assets/plugins/animate-css/animate.css')}}" rel="stylesheet" />
 
+    <!-- JQuery DataTable Css -->
+    <link href="{{url('resources/assets/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css')}}" rel="stylesheet">
+
     <!-- Bootstrap Material Datetime Picker Css -->
     <link href="{{url('resources/assets/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css')}}" rel="stylesheet" />
 
@@ -336,10 +339,10 @@
                     </a>
                     <ul class="ml-menu">
                         <li>
-                            <a href="pages/forms/basic-form-elements.html">Nouveau</a>
+                            <a href="{{url('stage_new')}}">Nouveau</a>
                         </li>
                         <li>
-                            <a href="pages/forms/advanced-form-elements.html">Liste</a>
+                            <a href="{{url('stage_list')}}">Liste</a>
                         </li>
                     </ul>
                 </li>
@@ -411,6 +414,18 @@
 
 <!-- Waves Effect Plugin Js -->
 <script src="{{url('resources/assets/plugins/node-waves/waves.js')}}"></script>
+
+<!-- Jquery DataTable Plugin Js -->
+<script src="{{url('resources/assets/plugins/jquery-datatable/jquery.dataTables.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/buttons.flash.min.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/jszip.min.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/pdfmake.min.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/vfs_fonts.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/buttons.html5.min.js')}}"></script>
+<script src="{{url('resources/assets/plugins/jquery-datatable/extensions/export/buttons.print.min.js')}}"></script>
+<script src="{{url('resources/assets/js/pages/tables/jquery-datatable.js')}}"></script>
 
 <!-- Autosize Plugin Js -->
 <script src="{{url('resources/assets/plugins/autosize/autosize.js')}}"></script>
