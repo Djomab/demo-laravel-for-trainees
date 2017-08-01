@@ -435,6 +435,7 @@
 
 <!-- Bootstrap Material Datetime Picker Plugin Js -->
 <script src="{{url('resources/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js')}}"></script>
+<script src="{{url('resources/assets/js/pages/forms/basic-form-elements.js')}}"></script>
 
 <!-- Jquery CountTo Plugin Js -->
 <script src="{{url('resources/assets/plugins/jquery-countto/jquery.countTo.js')}}"></script>
@@ -459,7 +460,6 @@
 <!-- Custom Js -->
 <script src="{{url('resources/assets/js/admin.js')}}"></script>
 <script src="{{url('resources/assets/js/pages/index.js')}}"></script>
-<script src="{{url('resources/assets/js/pages/forms/basic-form-elements.js')}}"></script>
 
 <!-- Demo Js -->
 <script src="{{url('resources/assets/js/demo.js')}}"></script>

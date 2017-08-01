@@ -15,7 +15,7 @@
         <div class="col-sm-12">
             <div class="form-group form-float">
                 <div class="form-line">
-                    <input type="text" class="form-control">
+                    <input type="text" class="datepicker form-control">
                     <label class="form-label">Date debut</label>
                 </div>
             </div>
@@ -23,7 +23,7 @@
         <div class="col-sm-12">
             <div class="form-group form-float">
                 <div class="form-line">
-                    <input type="text" class="form-control">
+                    <input type="text" class="datepicker form-control">
                     <label class="form-label">Date fin</label>
                 </div>
             </div>
