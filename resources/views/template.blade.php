@@ -325,7 +325,7 @@
                             <a href="{{url('projet_new')}}">Nouveau</a>
                         </li>
                         <li>
-                            <a href="pages/forms/advanced-form-elements.html">Liste</a>
+                            <a href="{{url('projet_list')}}">Liste</a>
                         </li>
                     </ul>
                 </li>

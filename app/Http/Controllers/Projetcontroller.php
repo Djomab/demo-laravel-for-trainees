@@ -10,4 +10,8 @@ class Projetcontroller extends Controller
     public function projetnew(){
         return view('projets.nouveau');
     }
+    //function qui renvoie la liste des projets
+    public function projetList(){
+        return view('projets.liste');
+    }
 }

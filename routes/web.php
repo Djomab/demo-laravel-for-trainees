@@ -12,6 +12,7 @@
 */
 
 Route::get('projet_new', 'ProjetController@projetnew');
+Route::get('projet_list', 'ProjetController@projetList');
 
 Route::get('/', function () {
     return view('accueil');
