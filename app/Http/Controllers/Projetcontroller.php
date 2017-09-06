@@ -45,7 +45,7 @@ class Projetcontroller extends Controller
             
             //enregistrement et rédirection avec message de succès
             $projet->save();
-            return redirect('')->with('reussite','Vous avez ajouté un nouveau projet');
+            return back()->with('reussite','Vous avez ajouté un nouveau projet');
 
         }
         return redirect('')->withErrors($validation)->withInput();

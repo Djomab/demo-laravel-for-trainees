@@ -1,9 +1,14 @@
 @extends('template')
 @section('title') Nouveau - projet @endsection
 @section('page_head') AJOUT PROJET @endsection
+@if(session('reussite'))
+    <div class="alert alert-success alert-dismissibles">
+        {{ session('reussite') }}
+    </div>
+@endif
 @section('champ1')
     <h2 class="card-inside-title">Enregistrer nouveau projet ici</h2>
-    <div class="row clearfix jsdemo-notification-button">
+    <div class="row clearfix ">
         <form action="{{url('ajout_projet')}}" autocomplete="off" method="post">
             {{csrf_field()}}
             <div class="col-sm-12">
