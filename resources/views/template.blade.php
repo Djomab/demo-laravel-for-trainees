@@ -412,6 +412,9 @@
 <!-- Slimscroll Plugin Js -->
 <script src="{{url('resources/assets/plugins/jquery-slimscroll/jquery.slimscroll.js')}}"></script>
 
+<!-- Bootstrap Notify Plugin Js -->
+<script src="{{url('resources/assets/plugins/bootstrap-notify/bootstrap-notify.js')}}"></script>
+
 <!-- Waves Effect Plugin Js -->
 <script src="{{url('resources/assets/plugins/node-waves/waves.js')}}"></script>
 
@@ -459,6 +462,7 @@
 
 <!-- Custom Js -->
 <script src="{{url('resources/assets/js/admin.js')}}"></script>
+<script src="{{url('resources/assets/js/pages/ui/notifications.js')}}"></script>
 <script src="{{url('resources/assets/js/pages/index.js')}}"></script>
 
 <!-- Demo Js -->

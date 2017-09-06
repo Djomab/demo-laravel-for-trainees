@@ -3,7 +3,7 @@
 @section('page_head') AJOUT PROJET @endsection
 @section('champ1')
     <h2 class="card-inside-title">Enregistrer nouveau projet ici</h2>
-    <div class="row clearfix">
+    <div class="row clearfix jsdemo-notification-button">
         <form action="{{url('ajout_projet')}}" autocomplete="off" method="post">
             {{csrf_field()}}
             <div class="col-sm-12">
@@ -38,7 +38,10 @@
                     </div>
                 </div>
             </div>
-            <button type="submit" name="ajouter" class="btn btn-info pull-right m-t-15 waves-effect">AJOUTER</button>
+
+            <button type="submit" name="ajouter" class="btn btn-info pull-right m-t-15 waves-effect"  data-placement-from="bottom" data-text="Vous avez ajouté un nouveau projet" data-placement-align="center" data-animate-enter="a" data-animate-exit="" data-color-name="alert-success">
+                AJOUTER
+            </button>
         </form>
     </div>
 @endsection
