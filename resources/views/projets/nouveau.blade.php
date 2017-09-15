@@ -1,11 +1,15 @@
 @extends('template')
 @section('title') Nouveau - projet @endsection
-@section('page_head') AJOUT PROJET @endsection
-@if(session('reussite'))
-    <div class="alert alert-success alert-dismissibles">
-        {{ session('reussite') }}
-    </div>
-@endif
+@section('page_head')
+    @if(session('reussite'))
+        <div class="alert alert-success alert-dismissibles" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            {{ session('reussite') }}
+        </div>
+    @endif
+    AJOUT PROJET
+@endsection
+
 @section('champ1')
     <h2 class="card-inside-title">Enregistrer nouveau projet ici</h2>
     <div class="row clearfix ">

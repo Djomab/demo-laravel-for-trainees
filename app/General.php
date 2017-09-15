@@ -27,6 +27,6 @@ class General extends Model
             case 'December': $mois='12'; break;
             default: $mois=""; break;
         }
-        return $d[1]." $mois ".$d[3];
+        return $d[1].'-'.$mois.'-'.$d[3];
     }
 }

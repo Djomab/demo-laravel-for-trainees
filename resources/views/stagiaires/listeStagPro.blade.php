@@ -21,6 +21,7 @@
         <table class="table table-bordered table-striped table-hover dataTable js-exportable">
             <thead>
             <tr>
+                <th>Projet</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Niveau</th>
@@ -30,6 +31,7 @@
             </thead>
             <tfoot>
             <tr>
+                <th>Projet</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Niveau</th>
@@ -38,8 +40,10 @@
             </tr>
             </tfoot>
             <tbody>
+            {{--{{dd($stagiaires->projet->libelle)}}--}}
                 @foreach($stagiaires as $stagiaire)
                     <tr>
+                        <td>{{$stagiaire->projet->libelle}}</td>
                         <td>{{$stagiaire->nom}}</td>
                         <td>{{$stagiaire->prenom}}</td>
                         <td>{{$stagiaire->niveau}}</td>

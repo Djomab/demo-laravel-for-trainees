@@ -28,5 +28,11 @@ Route::get('stage_new', 'ProjetController@stagenew');
 //la route de la liste de stagiaires
 Route::get('stage_list', 'ProjetController@stageList');
 
+//la route de la liste de stagiaires avec leur projet
+Route::get('liste', 'ProjetController@liste');
+
 //route pour l'ajour d'un projet. Remarquons que c'est une route post
 Route::post('ajout_projet', 'ProjetController@AjouterProjet');
+
+//route pour l'ajour d'un stagiaire. Remarquons que c'est une route post
+Route::post('ajout_stagiaire', 'ProjetController@AjouterStagiaire');

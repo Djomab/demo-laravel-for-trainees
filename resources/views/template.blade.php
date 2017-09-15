@@ -351,6 +351,11 @@
                         <i class="material-icons">view_list</i>
                         <span>Projets et stagiaires</span>
                     </a>
+                    <ul class="ml-menu">
+                        <li>
+                            <a href="{{url('liste')}}">Liste</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -467,6 +472,9 @@
 
 <!-- Demo Js -->
 <script src="{{url('resources/assets/js/demo.js')}}"></script>
+<script>
+    $('.alert').fadeOut(5000);
+</script>
 </body>
 
 </html>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\General;
 use App\Projet;
+use App\Stagiaire;
 use Illuminate\Http\Request;
 
 class Projetcontroller extends Controller
@@ -14,15 +15,23 @@ class Projetcontroller extends Controller
     }
     //function qui renvoie la liste des projets
     public function projetList(){
-        return view('projets.liste');
+        $projets = Projet::all();
+        return view('projets.liste',['projets'=>$projets]);
     }
     //function qui renvoie la page de création de nouveaux stagiaire
     public function stagenew(){
-        return view('stagiaires.nouveau');
+        $projets = Projet::all();
+        return view('stagiaires.nouveau',['projets'=>$projets]);
     }
     //function qui renvoie la liste des stagiaires
     public function stageList(){
-        return view('stagiaires.liste');
+        $stag = Stagiaire::all();
+        return view('stagiaires.liste',['stagiaires'=>$stag]);
+    }
+    //function qui renvoie la liste des stagiaires
+    public function liste(){
+        $stag = Stagiaire::with('projet')->get();
+        return view('stagiaires.listeStagPro',['stagiaires'=>$stag]);
     }
 
     //fonction permettant d'enregistrer un nouveau projet
@@ -49,5 +58,27 @@ class Projetcontroller extends Controller
 
         }
         return redirect('')->withErrors($validation)->withInput();
+    }
+
+    //fonction permettant d'ajouter un projet à un nouveau stagiaire
+    public function AjouterStagiaire(Request $request)
+    {
+        $validation = Stagiaire::validate($request->all());
+        if($validation->passes())
+        {
+            $stag = new Stagiaire;
+            $stag->projet_id = $request->get('projet_id');
+            $stag->nom = $request->get('nom');
+            $stag->prenom = $request->get('prenom');
+            $stag->niveau = $request->get('niveau');
+            $stag->telephone = $request->get('telephone');
+            $stag->sexe = $request->get('sexe');
+
+            //enregistrement et rédirection avec message de succès
+            $stag->save();
+            return back()->with('reussite','Vous avez assigné un projet à un nouvel stagiaire');
+
+        }
+        return back()->withErrors($validation)->withInput();
     }
 }
